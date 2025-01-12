@@ -1,6 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import App from './App';
+import ComponentVsElement3 from './App';
 // import ComponentVsElement from './ComponentVsElement';
 // import ComponentVsElement2 from './ComponentVsElement2';
 import reportWebVitals from './reportWebVitals';
@@ -10,7 +10,7 @@ root.render(
   <React.StrictMode>
     {/* <ComponentVsElement /> */}
     {/* <ComponentVsElement2 /> */}
-    <App />
+    {/* <ComponentVsElement3 /> */}
   </React.StrictMode>
 );
 

@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import { Counter } from './Counter';
 
-const App = () => {
+const ComponentVsElement3 = () => {
   const [isVisible, setVisible] = useState(true);
 
   return (
@@ -17,4 +17,4 @@ const App = () => {
   );
 };
 
-export default App;
+export default ComponentVsElement3;
