@@ -3,6 +3,8 @@ import ReactDOM from 'react-dom/client';
 import ComponentVsElement3 from './ComponentVsElement3';
 // import ComponentVsElement from './ComponentVsElement';
 // import ComponentVsElement2 from './ComponentVsElement2';
+import UseStateApp from './UseStateApp';
+import UseEffectApp from './UseEffectApp';
 import reportWebVitals from './reportWebVitals';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
@@ -11,6 +13,8 @@ root.render(
     {/* <ComponentVsElement /> */}
     {/* <ComponentVsElement2 /> */}
     {/* <ComponentVsElement3 /> */}
+    {/* <UseStateApp /> */}
+    <UseEffectApp />
   </React.StrictMode>
 );
 
