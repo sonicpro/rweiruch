@@ -1,25 +1,20 @@
-import logo from './logo.svg';
-import './App.css';
+import { useState } from 'react';
+import { Counter } from './Counter';
 
-function App() {
+const App = () => {
+  const [isVisible, setVisible] = useState(true);
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <button onClick={() => setVisible(!isVisible)}>Toggle</button>
+      {/* Calling a component instead of using it as an element inserts its implementation into caller component 
+          This violates the rules of hooks if a component implementation is inserted conditionally. */}
+      {/* {isVisible ? Counter({ initialCount: 42 }) : null} */}
+
+      {/* That way the child component unmounts when using conditional rendering along with its hooks */}
+      {isVisible ? <Counter initialCount={42} /> : null}
     </div>
   );
-}
+};
 
 export default App;
