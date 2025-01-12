@@ -1,6 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import ComponentVsElement3 from './App';
+import ComponentVsElement3 from './ComponentVsElement3';
 // import ComponentVsElement from './ComponentVsElement';
 // import ComponentVsElement2 from './ComponentVsElement2';
 import reportWebVitals from './reportWebVitals';
